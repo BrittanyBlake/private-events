@@ -1,6 +1,17 @@
 <h1>sign up</h1>
 
 <%= form_with(model: @user, local: true) do |f| %>
+
+
+<% if @user.errors.any? %>
+        <h4> The following errors occurred</h4>
+        <ul>
+            <%= @user.errors.full_messages.each do |msg| %> 
+                <li> <%= msg %> </li>
+            <% end %>
+        </ul>
+<% end %>
+
     <%= f.label :username %>
     <%= f.text_field :username, placeholer: 'username' %><br><br>
     <%= f.submit 'sign up' %>
