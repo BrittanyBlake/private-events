@@ -11,12 +11,13 @@
 
   <body>
   <header>
-      <div><%= current_user%></div>
+      <div><%= current_user.username%></div>
     <nav>
       <%= link_to 'signin', login_path%>
       <%= link_to 'signout', logout_path, method: :delete %>
       <%= link_to 'signup', signup_path%>
-      <%= current_user%>
+      <%= link_to 'events', events_path%>
+      <%= link_to 'create event', new_event_path%>
     </nav>
   </header>
    <% flash.each do |name, msg| %>
