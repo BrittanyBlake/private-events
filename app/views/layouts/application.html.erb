@@ -11,7 +11,8 @@
 
   <body>
   <header>
-      <div><%= current_user.username%></div>
+    
+      <div><p> current user: <%= current_user.username%></p></div>
     <nav>
       <%= link_to 'signin', login_path%>
       <%= link_to 'signout', logout_path, method: :delete %>
