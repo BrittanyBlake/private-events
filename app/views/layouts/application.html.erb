@@ -10,6 +10,15 @@
   </head>
 
   <body>
+  <header>
+      <div><%= current_user%></div>
+    <nav>
+      <%= link_to 'signin', login_path%>
+      <%= link_to 'signout', logout_path, method: :delete %>
+      <%= link_to 'signup', signup_path%>
+      <%= current_user%>
+    </nav>
+  </header>
    <% flash.each do |name, msg| %>
         <%= msg %>
     <% end %>
