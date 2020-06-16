@@ -1,10 +1,13 @@
 <h1>user: <%= @user.username %></h1>
 <h2>Events</h2>
-<% @user.events.each do |event|%>
+<% @created_events.each do |event|%>
     <p> Event: <%= event.title%></p>
     <p> Description: <%= event.description%></p>
     <p> Date: <%= event.date%></p><br> 
 <% end %>
 
-
-
+<% @upcoming_events.each do |event|%>
+    <p> Event: <%= event.title%></p>
+    <p> Description: <%= event.description%></p>
+    <p> Date: <%= event.date%></p><br> 
+<% end %>
