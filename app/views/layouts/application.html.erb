@@ -12,7 +12,7 @@
   <body>
   <header>
     
-      <div><p> current user: <%= current_user.username%></p></div>
+      <div><p> current user: <%= current_user.username if current_user%></p></div>
     <nav>
       <%= link_to 'signin', login_path%>
       <%= link_to 'signout', logout_path, method: :delete %>
