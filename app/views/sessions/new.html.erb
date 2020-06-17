@@ -1,7 +1,7 @@
-<h1>sign up</h1>
+<h1>sign in</h1>
 
 <%= form_with(scope: :session,url: login_path, local: true) do |f| %>
     <%= f.label :username %>
-    <%= f.text_field :username, placeholer: 'username' %><br><br>
+    <%= f.text_field :username, placeholer: 'username', id: 'session_name' %><br><br>
     <%= f.submit 'login' %>
 <% end %>
