@@ -75,6 +75,12 @@ $ bundle install
 $ rails console
 play around with different commands to see it in action
 
+  ## Automated Test
+
+* Run the command and see the output: 
+```$ bundle exec rspec```
+![Rspec](app/assets/images/rspec.png)
+
 <!-- CONTACT -->
 ## Authors
 
