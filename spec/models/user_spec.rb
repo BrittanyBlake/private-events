@@ -1,23 +1,22 @@
 require 'rails_helper'
 
-
 RSpec.describe User, type: :model do
-  context "validations" do
-      subject do 
-        described_class.new( username: "Jane" ) 
-      end
+  context 'validations' do
+    subject do
+      described_class.new(username: 'Jane')
+    end
 
-      it 'expects username to be valid' do
-        expect(subject).to be_valid
-      end
+    it 'expects username to be valid' do
+      expect(subject).to be_valid
+    end
 
-      it 'is not valid without a username' do
-        subject.username = nil
-        expect(subject).to_not be_valid
-      end
+    it 'is not valid without a username' do
+      subject.username = nil
+      expect(subject).to_not be_valid
+    end
   end
 
-  context "associations" do
+  context 'associations' do
     it 'should have many events' do
       t = User.reflect_on_association(:events)
       expect(t.macro).to eq(:has_many)

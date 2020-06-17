@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe AttendedEvent, type: :model do
-  context "Associations" do
+  context 'Associations' do
     it 'should belong to an event' do
       t = AttendedEvent.reflect_on_association(:event)
       expect(t.macro).to eq(:belongs_to)
@@ -12,5 +12,4 @@ RSpec.describe AttendedEvent, type: :model do
       expect(t.macro).to eq(:belongs_to)
     end
   end
-  
 end
