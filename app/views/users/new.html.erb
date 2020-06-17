@@ -1,0 +1,7 @@
+<h1>sign up</h1>
+
+<%= form_with(model: @user, local: true) do |f| %>
+    <%= f.label :username %>
+    <%= f.text_field :username, placeholer: 'username', id:"username"%><br><br>
+    <%= f.submit 'sign up' %>
+<% end %>

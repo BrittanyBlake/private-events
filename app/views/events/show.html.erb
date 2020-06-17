@@ -1,0 +1,10 @@
+<h1>Event: <%= @event.title%></h1>
+
+<p> Description: <%= @event.description%></p>
+<p> Date: <%= @event.date%></p><br>
+
+<ul> Attendees: <% @attendees.each do |attendee|%> </ul>
+<li> <%= attendee.username%> </li>
+
+<% end %>
+

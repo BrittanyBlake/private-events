@@ -10,6 +10,24 @@
   </head>
 
   <body>
+  <header>
+    
+      <% if current_user %>
+      <div><p> current user: <%=  current_user.username if current_user%></p></div>
+    <nav>
+      <%= link_to 'signout', logout_path, method: :delete %>
+      <%= link_to 'create event', new_event_path%>
+      <% else %>
+      <%= link_to 'signin', login_path%>
+      <%= link_to 'signup', signup_path%>
+      <% end %>
+      <%= link_to 'events', events_path%>
+
+    </nav>
+  </header>
+   <% flash.each do |name, msg| %>
+        <%= msg %>
+    <% end %>
     <%= yield %>
   </body>
 </html>
