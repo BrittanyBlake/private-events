@@ -10,6 +10,17 @@
   </head>
 
   <body>
+  <header>
+    
+      <div><p> current user: <%= current_user.username%></p></div>
+    <nav>
+      <%= link_to 'signin', login_path%>
+      <%= link_to 'signout', logout_path, method: :delete %>
+      <%= link_to 'signup', signup_path%>
+      <%= link_to 'events', events_path%>
+      <%= link_to 'create event', new_event_path%>
+    </nav>
+  </header>
    <% flash.each do |name, msg| %>
         <%= msg %>
     <% end %>
