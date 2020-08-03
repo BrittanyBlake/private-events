@@ -24,7 +24,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/BrittanyBlake/private-events">
-    <img src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/5726/s300/icon-white-on-murple-copy.png" alt="Logo" width="80" height="80">
+    <img src="app/assets/images/rails.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Private-Events</h3>
@@ -94,10 +94,11 @@ play around with different commands to see it in action
 
 - Github: [@AdamClasic](https://github.com/AdamClasic)
 - Twitter: [@adamallalou](https://twitter.com/adamallalou)
+- Linkedin: [Adam Allalou](https://www.linkedin.com/in/adam-allalou/)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [Microverse](https://www.microverse.org/)
+* [Odin Project](https://www.theodinproject.com/)
 * [Ruby on Rails Documentation](https://api.rubyonrails.org)
 
 ## Show your support
