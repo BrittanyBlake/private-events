@@ -53,7 +53,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-For this project we were asked to build a junior version EventBit called Private-Events. We built the data structures necessary to support link submissions and commenting. 
+For this project we were asked to build a junior version EventBrite called Private-Events. We built the data structures necessary to support link submissions and commenting. 
 
 <!-- BUILD WITH -->
 ## Built With
